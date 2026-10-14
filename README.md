@@ -33,12 +33,6 @@ git clone https://github.com/wu1571028912-crypto/stm32-drone.git
 
 飞控姿态任务目标周期为 5 ms（200 Hz）。具体控制实现位于 `fly/USER/pid.c`，当前为 LADRC，文件名沿用原工程命名。
 
-## 当前状态
-
-本仓库整理保留原有 C 源码、头文件、CubeMX 配置和 Keil 工程，排除编译产物与本机调试缓存。本次发布未重新编译、烧录或验证实飞效果。
-
-当前飞控输出为 TIM2 四路占空比 PWM，按 72 MHz TIM2 时钟计算约为 9 kHz；未据此声明支持标准无刷电调、DShot 或 FOC。电机驱动接口和已有实现限制详见两个子工程 README。
-
 ## 版权与第三方依赖
 
 自有代码尚未指定统一的开源许可证。STM32 HAL、CMSIS、FreeRTOS 和江协科技 NRF24L01 驱动保留原有版权和许可声明，见 [fly 依赖说明](fly/THIRD_PARTY_NOTICES.md) 与 [remote 依赖说明](remote/THIRD_PARTY_NOTICES.md)。
