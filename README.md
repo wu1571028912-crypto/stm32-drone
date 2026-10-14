@@ -11,6 +11,11 @@
 | `fly/` | MPU6050 采集、Mahony 姿态解算、串级 LADRC、无线接收和四路 PWM 输出 | [fly.uvprojx](fly/MDK-ARM/fly.uvprojx) | [飞控说明](fly/README.md) |
 | `remote/` | ADC / DMA 摇杆采集、按键处理和 NRF24L01 控制帧发送 | [remote.uvprojx](remote/MDK-ARM/remote.uvprojx) | [遥控说明](remote/README.md) |
 
+## 电路原理图
+
+- [主控原理图](fly/主控原理图.pdf)
+- [遥控原理图](remote/遥控原理图.pdf)
+
 ## 获取与编译
 
 ```sh
